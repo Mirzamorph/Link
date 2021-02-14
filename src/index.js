@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 import axios from 'axios';
-axios.defaults.baseURL = 'http://linkback.pyctam.ru'
+axios.defaults.baseURL = process.env.REACT_APP_API_HOST
 axios.defaults.headers.get['Accept'] = 'application/json'
 axios.defaults.headers.post['Accept'] = 'application/json'
 
